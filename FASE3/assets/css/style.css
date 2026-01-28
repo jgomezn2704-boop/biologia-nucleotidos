@@ -1,0 +1,8 @@
+
+body{margin:0;font-family:system-ui;background:#f1f5f9}
+.app{display:flex;height:100vh}
+.sidebar{width:260px;background:#0f172a;color:#fff;padding:20px}
+.sidebar a{color:#cbd5e1;display:block;margin:8px 0;text-decoration:none}
+.content{flex:1;padding:30px;background:#fff}
+.info{margin-top:15px;padding:12px;border-left:4px solid #38bdf8;background:#f0f9ff}
+button{margin:5px;padding:6px 12px}

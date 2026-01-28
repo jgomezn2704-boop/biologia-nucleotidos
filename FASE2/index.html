@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Nucleótidos – Fase 2</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <h2>Nucleótidos</h2>
+    <nav>
+      <a href="#salvamento">Purinas – Salvamento</a>
+      <a href="#clinica">Caso clínico</a>
+      <a href="#parcial">Parcial</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section id="salvamento">
+      <h1>Vía de Salvamento de Purinas</h1>
+      <p>
+        La vía de salvamento reutiliza bases purínicas libres mediante la enzima HGPRT,
+        reduciendo el gasto energético.
+      </p>
+      <button onclick="info('HGPRT')">HGPRT</button>
+      <div id="infoBox" class="info"></div>
+    </section>
+
+    <section id="clinica">
+      <h1>Caso clínico: Lesch–Nyhan</h1>
+      <p>
+        Paciente pediátrico con hiperuricemia, automutilación y retraso neurológico.
+      </p>
+      <ul>
+        <li>Deficiencia de HGPRT</li>
+        <li>Aumento de PRPP</li>
+        <li>Sobreproducción de ácido úrico</li>
+      </ul>
+    </section>
+
+    <section id="parcial">
+      <h1>Parcial – Metabolismo de Nucleótidos</h1>
+      <p>Pregunta 1 (10 pts): precursor común de AMP y GMP</p>
+      <button onclick="score('ATP')">ATP</button>
+      <button onclick="score('IMP')">IMP</button>
+      <button onclick="score('UTP')">UTP</button>
+      <p id="scoreBox"></p>
+    </section>
+  </main>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

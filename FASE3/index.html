@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Nucleótidos – Fase 3</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <h2>Nucleótidos</h2>
+    <nav>
+      <a href="#pirimidinas">Pirimidinas</a>
+      <a href="#catabolismo">Catabolismo</a>
+      <a href="#final">Parcial Final</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+
+    <section id="pirimidinas">
+      <h1>Biosíntesis de Pirimidinas</h1>
+      <p>
+        A diferencia de las purinas, el anillo pirimidínico se sintetiza primero
+        y luego se une a la ribosa-5-fosfato.
+      </p>
+
+      <button onclick="info('CPS2')">CPS II</button>
+      <button onclick="info('UMP')">UMP</button>
+      <button onclick="info('REG')">Regulación</button>
+
+      <div id="infoBox" class="info"></div>
+    </section>
+
+    <section id="catabolismo">
+      <h1>Catabolismo de Purinas</h1>
+      <p>
+        El catabolismo de purinas produce ácido úrico, cuyo exceso causa gota.
+      </p>
+
+      <button onclick="infoCat('gota')">Gota</button>
+      <button onclick="infoCat('alopurinol')">Alopurinol</button>
+
+      <div id="catBox" class="info"></div>
+    </section>
+
+    <section id="final">
+      <h1>Parcial Final</h1>
+
+      <p>1. Precursor común de AMP y GMP (5 pts)</p>
+      <button onclick="q1('ATP')">ATP</button>
+      <button onclick="q1('IMP')">IMP</button>
+
+      <p>2. Enzima clave de pirimidinas (5 pts)</p>
+      <button onclick="q2('CPS2')">CPS II</button>
+      <button onclick="q2('CPS1')">CPS I</button>
+
+      <p>3. Fármaco usado en gota (5 pts)</p>
+      <button onclick="q3('alopurinol')">Alopurinol</button>
+      <button onclick="q3('insulina')">Insulina</button>
+
+      <p id="scoreBox"></p>
+    </section>
+
+  </main>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
